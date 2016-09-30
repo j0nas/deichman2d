@@ -19,7 +19,7 @@ public class fadeInMenuText : MonoBehaviour {
         if (Time.time > time)
         {
             GetComponent<Text>().CrossFadeColor(Color.white, fadeTime, true, true);
-            fadeTime += -fadeTime / 10;
+            fadeTime += -fadeTime / 40;
         }
 	}
 }
