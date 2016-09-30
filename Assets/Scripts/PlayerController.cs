@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
 
         if (!isMoving)
         {
-            if (Input.anyKeyDown)
+            if (Input.anyKey)
             {
                 Move(Input.inputString);
             }
@@ -73,11 +73,6 @@ public class PlayerController : MonoBehaviour {
 
     }
 
-    void RaycastForWalls()
-    {
-        Physics2D.Raycast(transform.position, Vector2.up, gridLenght);
-    }
-
     void LerpMove(Vector3 target)
     {
         currentMoveDirection = target;
@@ -89,6 +84,10 @@ public class PlayerController : MonoBehaviour {
         transform.position = Vector3.Lerp(transform.position, target, (animStartTime / moveTime));
         animStartTime += Time.deltaTime;
 
+        if(Vector3.Distance(transform.position, target) < .005f)
+        {
+            transform.position = target;
+        }
 
         if(transform.position == target)
         {
