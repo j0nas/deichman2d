@@ -2,6 +2,7 @@ ProjectSettings/GraphicSettings.asset
 ProjectSettings/ProjectSettings.asset
 
 
+DOTweenSettings.asset
 # Created by https://www.gitignore.io/api/osx,windows,unity,visualstudio,csharp
 
 ### OSX ###
