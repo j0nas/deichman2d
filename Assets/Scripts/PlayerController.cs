@@ -52,14 +52,12 @@ public class PlayerController : MonoBehaviour {
             case "a":
                 if (Physics2D.Raycast(transform.position, Vector2.left * invertedX, gridLenght))
                     return;
-                sprt.flipX = true;
                 LerpMove(transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0));
                 anim.SetTrigger("startWalk");
                 break;
             case "d":
                 if (Physics2D.Raycast(transform.position, Vector2.right * invertedX, gridLenght))
                     return;
-                    sprt.flipX = false;
                 LerpMove(transform.position + new Vector3(gridLenght * invertedX, 0, 0));
                 anim.SetTrigger("startWalk");
                 break;
@@ -78,8 +76,9 @@ public class PlayerController : MonoBehaviour {
         currentMoveDirection = target;
         if (!isMoving)
         {
-            isMoving = true;
+
             animStartTime = 0;
+            isMoving = true;
         }
         transform.position = Vector3.Lerp(transform.position, target, (animStartTime / moveTime));
         animStartTime += Time.deltaTime;
