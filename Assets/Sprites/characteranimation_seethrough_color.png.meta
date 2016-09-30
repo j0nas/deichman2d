@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: 719eb815217bb574ab70460f30ba75b0
-timeCreated: 1475268769
+guid: 827f708ae6493a7409e63408fcc527aa
+timeCreated: 1475276704
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: character_idle_0
-    21300002: character_idle_1
-    21300004: character_idle_2
-    21300006: character_idle_3
-    21300008: character_idle_4
+    21300000: characteranimation_seethrough_color_0
+    21300002: characteranimation_seethrough_color_1
+    21300004: characteranimation_seethrough_color_2
+    21300006: characteranimation_seethrough_color_3
+    21300008: characteranimation_seethrough_color_4
+    21300010: characteranimation_seethrough_color_5
+    21300012: characteranimation_seethrough_color_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,7 +60,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_idle_0
+      name: characteranimation_seethrough_color_0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +73,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: character_idle_1
+      name: characteranimation_seethrough_color_1
       rect:
         serializedVersion: 2
         x: 400
@@ -84,7 +86,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: character_idle_2
+      name: characteranimation_seethrough_color_2
       rect:
         serializedVersion: 2
         x: 800
@@ -97,7 +99,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: character_idle_3
+      name: characteranimation_seethrough_color_3
       rect:
         serializedVersion: 2
         x: 0
@@ -110,11 +112,37 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: character_idle_4
+      name: characteranimation_seethrough_color_4
       rect:
         serializedVersion: 2
         x: 400
         y: 400
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: characteranimation_seethrough_color_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: characteranimation_seethrough_color_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
         width: 400
         height: 400
       alignment: 0

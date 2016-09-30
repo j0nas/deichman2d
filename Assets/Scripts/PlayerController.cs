@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour {
         currentMoveDirection = target;
         if (!isMoving)
         {
-            if(target - transform.position == Vector3.left)
+            if(Vector3.Normalize(target - transform.position) == Vector3.left)
             {
                 sprt.flipX = true;
             }
