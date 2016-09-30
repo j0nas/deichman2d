@@ -7,6 +7,7 @@ public class buttonClick : MonoBehaviour {
     public GameObject other;
     public GameObject intro1;
     public GameObject intro2;
+    public GameObject intro3;
 
     public float scaleX;
     public float scaleY;
@@ -46,6 +47,9 @@ public class buttonClick : MonoBehaviour {
         intro1.GetComponent<fadeOutMenuText>().enabled = true;
         Destroy(intro2.GetComponent<fadeInMenuText>());
         intro2.GetComponent<fadeOutMenuText>().enabled = true;
+        Destroy(intro3.GetComponent<fadeInMenuText>());
+        intro3.GetComponent<fadeOutMenuText>().enabled = true;
+
         transform.DOMoveX(moveX, 1.5f, false);
         other.transform.DOMoveX(moveX, 1.5f, false).OnComplete(Remove);
     }

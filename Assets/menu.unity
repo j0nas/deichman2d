@@ -101,6 +101,7 @@ GameObject:
   - 212: {fileID: 178448089}
   - 114: {fileID: 178448088}
   - 114: {fileID: 178448087}
+  - 61: {fileID: 178448091}
   m_Layer: 0
   m_Name: exitButton
   m_TagString: Untagged
@@ -120,8 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   other: {fileID: 211298175}
-  intro1: {fileID: 0}
+  intro1: {fileID: 1908528516}
   intro2: {fileID: 2066645577}
+  intro3: {fileID: 1211538346}
   scaleX: 0.45
   scaleY: 0.45
   oldScaleX: 0.4
@@ -186,6 +188,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!61 &178448091
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178448086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 6.1699996, y: 2.4199998}
 --- !u!1 &211298175
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +213,7 @@ GameObject:
   - 212: {fileID: 211298178}
   - 114: {fileID: 211298177}
   - 114: {fileID: 211298176}
+  - 61: {fileID: 211298180}
   m_Layer: 0
   m_Name: newGameButton
   m_TagString: Untagged
@@ -216,8 +233,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   other: {fileID: 178448086}
-  intro1: {fileID: 0}
+  intro1: {fileID: 1908528516}
   intro2: {fileID: 2066645577}
+  intro3: {fileID: 1211538346}
   scaleX: 0.45
   scaleY: 0.45
   oldScaleX: 0.4
@@ -282,6 +300,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!61 &211298180
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 211298175}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 6.1699996, y: 2.4199998}
 --- !u!1 &286385260
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +407,7 @@ RectTransform:
   m_Children:
   - {fileID: 1908528517}
   - {fileID: 2066645580}
+  - {fileID: 1211538347}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -409,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -525,6 +558,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &1211538346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1211538347}
+  - 222: {fileID: 1211538350}
+  - 114: {fileID: 1211538349}
+  - 114: {fileID: 1211538348}
+  - 114: {fileID: 1211538351}
+  m_Layer: 5
+  m_Name: '|'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1211538347
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211538346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 513937614}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14, y: 72}
+  m_SizeDelta: {x: 600, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1211538348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211538346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84de65458c7ca3b4b9584b82b165a5ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 5
+  fadeTime: 15
+--- !u!114 &1211538349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211538346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d0008586babf16b41bec9ea3430b5059, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '|
+
+'
+--- !u!222 &1211538350
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211538346}
+--- !u!114 &1211538351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211538346}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33cdc6c1cc83efb45a5f1a75f3cfa86c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1908528516
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 5
-  moveX: -194
+  moveX: -85
 --- !u!114 &1908528519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 1
+  fadeTime: 2
 --- !u!114 &1908528521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,7 +863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 5
-  moveX: 229
+  moveX: 99
 --- !u!114 &2066645582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,3 +887,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 1
+  fadeTime: 2
