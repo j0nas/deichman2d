@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour {
         transform.position = Vector3.Lerp(transform.position, target, (animStartTime / moveTime));
         animStartTime += Time.deltaTime;
 
+
         if(transform.position == target)
         {
             isMoving = false;
