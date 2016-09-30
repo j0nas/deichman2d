@@ -17,7 +17,7 @@ public class textApart : MonoBehaviour {
 	
         if (Time.time > time)
         {
-            transform.DOLocalMoveX(moveX, 5, false);
+            transform.DOLocalMoveX(moveX, 900, false);
         }
 	}
 }
