@@ -10,10 +10,13 @@ public class PlayerController : MonoBehaviour {
     public float moveTime;
 
     private bool isMoving = false;
+    private Animator anim;
+    private SpriteRenderer sprt;
 
 	// Use this for initialization
 	void Start () {
-	
+        anim = GetComponent<Animator>();
+        sprt = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -36,19 +39,20 @@ public class PlayerController : MonoBehaviour {
         {
             case "w":
                 if(Physics2D.Raycast(transform.position, Vector2.up * invertedY, gridLenght))
-                    return;
-                
+                    return;               
                 transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, gridLenght * invertedY, 0), moveTime);
                 break;
             case "a":
                 if (Physics2D.Raycast(transform.position, Vector2.left * invertedX, gridLenght))
                     return;
                 transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0), moveTime);
+                sprt.flipX = true;
                 break;
             case "d":
                 if (Physics2D.Raycast(transform.position, Vector2.right * invertedX, gridLenght))
                     return;
                 transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX, 0, 0), moveTime);
+                    sprt.flipX = false;
                 break;
             case "s":
                 if (Physics2D.Raycast(transform.position, Vector2.down * invertedY, gridLenght))
