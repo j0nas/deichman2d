@@ -1,8 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Controller test.unity
-=======
-- path: Assets/main.unity
->>>>>>> 700896bd763906bed9bacb62e88f6c71a38715db
-  isLoaded: 1
-  isActive: 1
