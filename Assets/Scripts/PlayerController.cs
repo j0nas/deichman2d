@@ -35,23 +35,23 @@ public class PlayerController : MonoBehaviour {
         switch (button)
         {
             case "w":
-                if(Physics2D.Raycast(transform.position, Vector2.up, gridLenght))
+                if(Physics2D.Raycast(transform.position, Vector2.up * invertedY, gridLenght))
                     return;
                 
                 transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, gridLenght * invertedY, 0), moveTime);
                 break;
             case "a":
-                if (Physics2D.Raycast(transform.position, Vector2.left, gridLenght))
+                if (Physics2D.Raycast(transform.position, Vector2.left * invertedX, gridLenght))
                     return;
                 transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0), moveTime);
                 break;
             case "d":
-                if (Physics2D.Raycast(transform.position, Vector2.right, gridLenght))
+                if (Physics2D.Raycast(transform.position, Vector2.right * invertedX, gridLenght))
                     return;
                 transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX, 0, 0), moveTime);
                 break;
             case "s":
-                if (Physics2D.Raycast(transform.position, Vector2.down, gridLenght))
+                if (Physics2D.Raycast(transform.position, Vector2.down * invertedY, gridLenght))
                     return;
                 transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, gridLenght * invertedY * (-1), 0), moveTime);
                 break;
