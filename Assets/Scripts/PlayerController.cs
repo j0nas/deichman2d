@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
 
         if (!isMoving)
         {
-            if (Input.anyKeyDown)
+            if (Input.anyKey)
             {
                 Move(Input.inputString);
             }
@@ -52,14 +52,12 @@ public class PlayerController : MonoBehaviour {
             case "a":
                 if (Physics2D.Raycast(transform.position, Vector2.left * invertedX, gridLenght))
                     return;
-                sprt.flipX = true;
                 LerpMove(transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0));
                 anim.SetTrigger("startWalk");
                 break;
             case "d":
                 if (Physics2D.Raycast(transform.position, Vector2.right * invertedX, gridLenght))
                     return;
-                    sprt.flipX = false;
                 LerpMove(transform.position + new Vector3(gridLenght * invertedX, 0, 0));
                 anim.SetTrigger("startWalk");
                 break;
@@ -73,22 +71,32 @@ public class PlayerController : MonoBehaviour {
 
     }
 
-    void RaycastForWalls()
-    {
-        Physics2D.Raycast(transform.position, Vector2.up, gridLenght);
-    }
-
     void LerpMove(Vector3 target)
     {
         currentMoveDirection = target;
         if (!isMoving)
         {
-            isMoving = true;
+            if(Vector3.Normalize(target - transform.position) == Vector3.left)
+            {
+                sprt.flipX = true;
+            }
+            if(target - transform.position == Vector3.right)
+            {
+                sprt.flipX = false;
+            }
+
+
+
             animStartTime = 0;
+            isMoving = true;
         }
         transform.position = Vector3.Lerp(transform.position, target, (animStartTime / moveTime));
         animStartTime += Time.deltaTime;
 
+        if(Vector3.Distance(transform.position, target) < .005f)
+        {
+            transform.position = target;
+        }
 
         if(transform.position == target)
         {
