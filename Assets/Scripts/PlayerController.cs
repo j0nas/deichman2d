@@ -76,6 +76,16 @@ public class PlayerController : MonoBehaviour {
         currentMoveDirection = target;
         if (!isMoving)
         {
+            if(target - transform.position == Vector3.left)
+            {
+                sprt.flipX = true;
+            }
+            if(target - transform.position == Vector3.right)
+            {
+                sprt.flipX = false;
+            }
+
+
 
             animStartTime = 0;
             isMoving = true;
