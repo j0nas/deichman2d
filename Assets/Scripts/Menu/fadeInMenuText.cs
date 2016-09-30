@@ -6,6 +6,7 @@ using System.Collections;
 public class fadeInMenuText : MonoBehaviour {
 
     public float time = 1f;
+    public float fadeTime;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,9 @@ public class fadeInMenuText : MonoBehaviour {
     void Update () {
 
         if (Time.time > time)
-          GetComponent<Text>().CrossFadeColor(Color.white, 2f, false, true);
+        {
+            GetComponent<Text>().CrossFadeColor(Color.white, fadeTime, true, true);
+            fadeTime += -fadeTime / 10;
+        }
 	}
 }
