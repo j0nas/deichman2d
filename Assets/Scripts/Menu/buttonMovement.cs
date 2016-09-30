@@ -4,7 +4,7 @@ using System.Collections;
 
 public class buttonMovement : MonoBehaviour {
 
-    public float time = 1;
+    public float time = 0.5f;
     public float positionX;
 
     // Use this for initialization
