@@ -21,33 +21,46 @@ public class PlayerController : MonoBehaviour {
 
         if (!isMoving)
         {
-            CheckForPress();
+            if (Input.anyKeyDown)
+            {
+                Move(Input.inputString);
+            }
         }
 
 	
 	}
 
-    void CheckForPress()
+    void Move(string button)
     {
-        if (Input.GetButtonDown("Up"))
+        switch (button)
         {
-            transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0,0, gridLenght * invertedY), moveTime);
+            case "w":
+                if(Physics2D.Raycast(transform.position, Vector2.up, gridLenght))
+                    return;
+                
+                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, gridLenght * invertedY, 0), moveTime);
+                break;
+            case "a":
+                if (Physics2D.Raycast(transform.position, Vector2.left, gridLenght))
+                    return;
+                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0), moveTime);
+                break;
+            case "d":
+                if (Physics2D.Raycast(transform.position, Vector2.right, gridLenght))
+                    return;
+                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX, 0, 0), moveTime);
+                break;
+            case "s":
+                if (Physics2D.Raycast(transform.position, Vector2.down, gridLenght))
+                    return;
+                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, gridLenght * invertedY * (-1), 0), moveTime);
+                break;
         }
+    }
 
-        if(Input.GetButtonDown("Left"))
-        {
-            transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0), moveTime);
-        }
-
-        if(Input.GetButtonDown("Right"))
-        {
-            transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX , 0, 0), moveTime);
-        }
-
-        if(Input.GetButtonDown("Down"))
-        {
-            transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, 0, gridLenght * invertedY * (-1)), moveTime);
-        }
+    void RaycastForWalls()
+    {
+        Physics2D.Raycast(transform.position, Vector2.up, gridLenght);
     }
 
 
