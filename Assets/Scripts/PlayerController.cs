@@ -9,9 +9,12 @@ public class PlayerController : MonoBehaviour {
     public int gridLenght;
     public float moveTime;
 
+    private float animStartTime;
     private bool isMoving = false;
     private Animator anim;
     private SpriteRenderer sprt;
+
+    private Vector3 currentMoveDirection;
 
 	// Use this for initialization
 	void Start () {
@@ -29,42 +32,68 @@ public class PlayerController : MonoBehaviour {
                 Move(Input.inputString);
             }
         }
-
-	
+        else
+        {
+            LerpMove(currentMoveDirection);
+        }	
 	}
 
     void Move(string button)
     {
+        print("button");
         switch (button)
         {
             case "w":
                 if(Physics2D.Raycast(transform.position, Vector2.up * invertedY, gridLenght))
                     return;               
-                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, gridLenght * invertedY, 0), moveTime);
+                LerpMove(transform.position + new Vector3(0, gridLenght * invertedY, 0));
+                anim.SetTrigger("startWalk");
                 break;
             case "a":
                 if (Physics2D.Raycast(transform.position, Vector2.left * invertedX, gridLenght))
                     return;
-                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0), moveTime);
                 sprt.flipX = true;
+                LerpMove(transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0));
+                anim.SetTrigger("startWalk");
                 break;
             case "d":
                 if (Physics2D.Raycast(transform.position, Vector2.right * invertedX, gridLenght))
                     return;
-                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(gridLenght * invertedX, 0, 0), moveTime);
                     sprt.flipX = false;
+                LerpMove(transform.position + new Vector3(gridLenght * invertedX, 0, 0));
+                anim.SetTrigger("startWalk");
                 break;
             case "s":
                 if (Physics2D.Raycast(transform.position, Vector2.down * invertedY, gridLenght))
                     return;
-                transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, gridLenght * invertedY * (-1), 0), moveTime);
+                anim.SetTrigger("startWalk");
+                LerpMove(transform.position + new Vector3(0, gridLenght * invertedY * (-1), 0));
                 break;
         }
+
     }
 
     void RaycastForWalls()
     {
         Physics2D.Raycast(transform.position, Vector2.up, gridLenght);
+    }
+
+    void LerpMove(Vector3 target)
+    {
+        currentMoveDirection = target;
+        if (!isMoving)
+        {
+            isMoving = true;
+            animStartTime = 0;
+        }
+        transform.position = Vector3.Lerp(transform.position, target, (animStartTime / moveTime));
+        animStartTime += Time.deltaTime;
+
+        if(transform.position == target)
+        {
+            isMoving = false;
+        }
+
     }
 
 
