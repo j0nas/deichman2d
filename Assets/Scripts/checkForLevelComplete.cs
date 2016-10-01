@@ -8,6 +8,16 @@ public class checkForLevelComplete : MonoBehaviour {
 	public static bool playerColliding = false;
 	public static bool partnerColliding = false;
 
+	void OnTriggerExit2D(Collider2D collObj) {
+		if (collObj.gameObject.tag == "Player") {
+			playerColliding = false;
+		}
+
+		if (collObj.gameObject.tag == "Partner") {
+			partnerColliding = false;
+		}
+	}
+
 	void OnTriggerEnter2D(Collider2D collObj) {
 		if (collObj.gameObject.tag == "Player") {
 			playerColliding = true;
