@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(0);
             //Debug.Log(Input.anyKeyDown);
         }
-        else if ((SceneManager.GetActiveScene().name + "XXXXXXXXX").Substring(0, 9) == "levelText" && Input.anyKeyDown)
+        else if ((SceneManager.GetActiveScene().name + "XXXXXXXXX").Substring(0, 9) == "levelText" && Input.anyKeyDown && Time.timeSinceLevelLoad > 1)
         {
             Debug.Log("SKiped text");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
