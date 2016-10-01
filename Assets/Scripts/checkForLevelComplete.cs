@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class checkForLevelComplete : MonoBehaviour {
 	public string NextLevelName;
 
-	private bool playerColliding = false;
-	private bool partnerColliding = false;
+	public static bool playerColliding = false;
+	public static bool partnerColliding = false;
 
 	// Use this for initialization
 	void Start () {
@@ -20,14 +20,18 @@ public class checkForLevelComplete : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collObj) {
 		if (collObj.gameObject.tag == "Player") {
 			playerColliding = true;
+			Debug.Log ("player colliding!");
 		}
 			
 		if (collObj.gameObject.tag == "Partner") {
 			partnerColliding = true;
+			Debug.Log ("partner colliding!");
 		}
 
 		if (playerColliding && partnerColliding) {
-			SceneManager.LoadScene (NextLevelName);
+			partnerColliding = false;
+			playerColliding = false;
+			SceneManager.LoadScene (NextLevelName, LoadSceneMode.Single);
 		}
 	}
 }
