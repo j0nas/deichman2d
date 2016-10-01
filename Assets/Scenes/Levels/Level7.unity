@@ -100,7 +100,7 @@ GameObject:
   - 4: {fileID: 22341407}
   - 212: {fileID: 22341406}
   - 61: {fileID: 22341405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - 4: {fileID: 67000636}
   - 212: {fileID: 67000635}
   - 61: {fileID: 67000634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   - 4: {fileID: 163915059}
   - 212: {fileID: 163915058}
   - 61: {fileID: 163915057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - 4: {fileID: 193860010}
   - 212: {fileID: 193860009}
   - 61: {fileID: 193860008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   - 4: {fileID: 303396096}
   - 212: {fileID: 303396095}
   - 61: {fileID: 303396097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   - 4: {fileID: 307665658}
   - 212: {fileID: 307665657}
   - 61: {fileID: 307665656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +673,7 @@ GameObject:
   - 4: {fileID: 409815541}
   - 212: {fileID: 409815540}
   - 61: {fileID: 409815539}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +750,7 @@ GameObject:
   - 4: {fileID: 584872343}
   - 212: {fileID: 584872342}
   - 61: {fileID: 584872341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - 4: {fileID: 833250094}
   - 212: {fileID: 833250093}
   - 61: {fileID: 833250092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1015,7 +1015,7 @@ GameObject:
   - 4: {fileID: 921683893}
   - 212: {fileID: 921683892}
   - 61: {fileID: 921683891}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   - 4: {fileID: 941691757}
   - 212: {fileID: 941691756}
   - 61: {fileID: 941691755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,7 +1169,7 @@ GameObject:
   - 4: {fileID: 955806830}
   - 212: {fileID: 955806829}
   - 61: {fileID: 955806828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1244,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1140034514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1300,7 @@ GameObject:
   - 4: {fileID: 1289122790}
   - 212: {fileID: 1289122789}
   - 61: {fileID: 1289122788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   - 4: {fileID: 1396955904}
   - 212: {fileID: 1396955906}
   - 61: {fileID: 1396955905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,7 +1566,7 @@ GameObject:
   - 4: {fileID: 1443382779}
   - 212: {fileID: 1443382778}
   - 61: {fileID: 1443382777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1643,7 +1643,7 @@ GameObject:
   - 4: {fileID: 1493192107}
   - 212: {fileID: 1493192106}
   - 61: {fileID: 1493192105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1807,7 +1807,7 @@ GameObject:
   - 4: {fileID: 1619422671}
   - 212: {fileID: 1619422670}
   - 61: {fileID: 1619422669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1884,7 +1884,7 @@ GameObject:
   - 4: {fileID: 1638911263}
   - 212: {fileID: 1638911262}
   - 61: {fileID: 1638911261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1961,9 +1961,9 @@ GameObject:
   - 4: {fileID: 1698784889}
   - 212: {fileID: 1698784888}
   - 61: {fileID: 1698784887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2038,7 +2038,7 @@ GameObject:
   - 4: {fileID: 1700017329}
   - 212: {fileID: 1700017328}
   - 61: {fileID: 1700017327}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2115,7 +2115,7 @@ GameObject:
   - 4: {fileID: 1760549016}
   - 212: {fileID: 1760549015}
   - 61: {fileID: 1760549014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2192,7 @@ GameObject:
   - 4: {fileID: 1772872306}
   - 212: {fileID: 1772872305}
   - 61: {fileID: 1772872304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2269,7 +2269,7 @@ GameObject:
   - 4: {fileID: 1780225470}
   - 212: {fileID: 1780225469}
   - 61: {fileID: 1780225468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2346,7 +2346,7 @@ GameObject:
   - 4: {fileID: 1867006873}
   - 212: {fileID: 1867006872}
   - 61: {fileID: 1867006871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2423,7 +2423,7 @@ GameObject:
   - 4: {fileID: 1878407496}
   - 212: {fileID: 1878407495}
   - 61: {fileID: 1878407494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2500,7 +2500,7 @@ GameObject:
   - 4: {fileID: 1995642499}
   - 212: {fileID: 1995642498}
   - 61: {fileID: 1995642497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2577,7 +2577,7 @@ GameObject:
   - 4: {fileID: 2046439403}
   - 212: {fileID: 2046439402}
   - 61: {fileID: 2046439401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

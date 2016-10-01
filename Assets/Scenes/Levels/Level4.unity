@@ -100,7 +100,7 @@ GameObject:
   - 4: {fileID: 17329712}
   - 212: {fileID: 17329711}
   - 61: {fileID: 17329710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (4)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - 4: {fileID: 163477653}
   - 212: {fileID: 163477652}
   - 61: {fileID: 163477651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (7)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - 4: {fileID: 240912964}
   - 212: {fileID: 240912963}
   - 61: {fileID: 240912962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (2)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   - 4: {fileID: 341009906}
   - 212: {fileID: 341009905}
   - 61: {fileID: 341009904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   - 4: {fileID: 449056854}
   - 212: {fileID: 449056853}
   - 61: {fileID: 449056852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (6)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - 4: {fileID: 618013820}
   - 212: {fileID: 618013819}
   - 61: {fileID: 618013818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (9)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -647,10 +647,6 @@ Prefab:
       propertyPath: inverted
       value: 
       objectReference: {fileID: 1556881050}
-    - target: {fileID: 1000013659160152, guid: 612b0ab48ee0c5646aecbd2919c2943b, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 612b0ab48ee0c5646aecbd2919c2943b, type: 2}
   m_IsPrefabParent: 0
@@ -664,7 +660,7 @@ GameObject:
   - 4: {fileID: 864285816}
   - 212: {fileID: 864285815}
   - 61: {fileID: 864285814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (8)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -788,7 +784,7 @@ GameObject:
   - 4: {fileID: 877034706}
   - 212: {fileID: 877034705}
   - 61: {fileID: 877034704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (3)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -921,7 +917,7 @@ GameObject:
   - 4: {fileID: 1586257351}
   - 212: {fileID: 1586257350}
   - 61: {fileID: 1586257349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (5)
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -1084,7 +1080,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2025534032}
   - 212: {fileID: 2025534031}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room_0
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -1147,7 +1143,7 @@ GameObject:
   - 4: {fileID: 2140969337}
   - 212: {fileID: 2140969336}
   - 61: {fileID: 2140969335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (1)
   m_TagString: wall
   m_Icon: {fileID: 0}

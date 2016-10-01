@@ -100,7 +100,7 @@ GameObject:
   - 4: {fileID: 75291949}
   - 212: {fileID: 75291948}
   - 61: {fileID: 75291947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - 4: {fileID: 90539788}
   - 212: {fileID: 90539787}
   - 61: {fileID: 90539786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - 4: {fileID: 108497230}
   - 212: {fileID: 108497229}
   - 61: {fileID: 108497228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - 4: {fileID: 193860010}
   - 212: {fileID: 193860009}
   - 61: {fileID: 193860008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   - 4: {fileID: 303396096}
   - 212: {fileID: 303396095}
   - 61: {fileID: 303396097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ GameObject:
   - 4: {fileID: 604127019}
   - 212: {fileID: 604127018}
   - 61: {fileID: 604127017}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   - 4: {fileID: 1027944659}
   - 212: {fileID: 1027944658}
   - 61: {fileID: 1027944657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ GameObject:
   - 4: {fileID: 1052318519}
   - 212: {fileID: 1052318518}
   - 61: {fileID: 1052318517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +938,7 @@ GameObject:
   - 4: {fileID: 1062034375}
   - 212: {fileID: 1062034374}
   - 61: {fileID: 1062034373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1015,7 +1015,7 @@ GameObject:
   - 4: {fileID: 1110385544}
   - 212: {fileID: 1110385543}
   - 61: {fileID: 1110385542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   - 4: {fileID: 1116653845}
   - 212: {fileID: 1116653844}
   - 61: {fileID: 1116653843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,7 +1169,7 @@ GameObject:
   - 4: {fileID: 1120134942}
   - 212: {fileID: 1120134941}
   - 61: {fileID: 1120134940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1330,7 +1330,7 @@ GameObject:
   - 4: {fileID: 1353577129}
   - 212: {fileID: 1353577131}
   - 61: {fileID: 1353577130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,7 +1407,7 @@ GameObject:
   - 4: {fileID: 1386633645}
   - 212: {fileID: 1386633644}
   - 61: {fileID: 1386633643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1484,7 +1484,7 @@ GameObject:
   - 4: {fileID: 1490844827}
   - 212: {fileID: 1490844826}
   - 61: {fileID: 1490844825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1648,7 +1648,7 @@ GameObject:
   - 4: {fileID: 1535230506}
   - 212: {fileID: 1535230505}
   - 61: {fileID: 1535230504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,7 +1725,7 @@ GameObject:
   - 4: {fileID: 1541339901}
   - 212: {fileID: 1541339900}
   - 61: {fileID: 1541339899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1802,7 +1802,7 @@ GameObject:
   - 4: {fileID: 1667658246}
   - 212: {fileID: 1667658245}
   - 61: {fileID: 1667658244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1879,7 @@ GameObject:
   - 4: {fileID: 1760549016}
   - 212: {fileID: 1760549015}
   - 61: {fileID: 1760549014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1956,7 +1956,7 @@ GameObject:
   - 4: {fileID: 2046439403}
   - 212: {fileID: 2046439402}
   - 61: {fileID: 2046439401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2031,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2133064740}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -26,7 +26,7 @@ GameObject:
   - 50: {fileID: 50000012862602750}
   m_Layer: 2
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +107,9 @@ MonoBehaviour:
   gridlenth: 1
   isMoving: 0
   animLenght: 5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!212 &212000013891834260
 SpriteRenderer:
   m_ObjectHideFlags: 1

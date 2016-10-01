@@ -26,6 +26,8 @@ public class NewPlayerController : MonoBehaviour {
 	private string currentDirection = "";
 	private string inverseDirection = "";
 
+    [SerializeField] LayerMask wallLayer;
+
 	// Use this for initialization
 	void Start () {
         myAnim = GetComponent<Animator>();
@@ -141,7 +143,7 @@ public class NewPlayerController : MonoBehaviour {
 				break;
 		}
 
-		RaycastHit2D hit = Physics2D.Raycast(obj.transform.position, dir, gridlenth);
+		RaycastHit2D hit = Physics2D.Raycast(obj.transform.position, dir, gridlenth, wallLayer);
 
 		if (hit.collider != null) {
 			return hit.transform.tag;
