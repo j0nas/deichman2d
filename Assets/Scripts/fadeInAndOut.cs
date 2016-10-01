@@ -20,18 +20,18 @@ public class fadeInAndOut : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        if (Time.time < 5)
+        if (Time.timeSinceLevelLoad < 5)
         {
             GetComponent<Text>().CrossFadeColor(Color.white, fadeInTime, true, true);
             fadeInTime -= fadeInTime / 20;
         }
 
-        if (Time.time > 5)
+        if (Time.timeSinceLevelLoad > 5)
         {
             GetComponent<Text>().CrossFadeAlpha(0, fadeOutTime, false);
             fadeOutTime -= fadeOutTime / 20;
         }
-        if (Time.time > 7f)
+        if (Time.timeSinceLevelLoad > 7f)
             LoadLevel();
         if (Input.GetMouseButtonDown(0))
             LoadLevel();
