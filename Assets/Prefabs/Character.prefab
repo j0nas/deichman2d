@@ -24,7 +24,7 @@ GameObject:
   - 114: {fileID: 114000012827892550}
   - 61: {fileID: 61000011939525940}
   - 50: {fileID: 50000012862602750}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,6 @@ MonoBehaviour:
   gridlenth: 1
   isMoving: 0
   animLenght: 5
-  oneBoolToRuleThemAll: 0
 --- !u!212 &212000013891834260
 SpriteRenderer:
   m_ObjectHideFlags: 1
