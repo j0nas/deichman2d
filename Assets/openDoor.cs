@@ -5,8 +5,11 @@ public class openDoor : MonoBehaviour {
 
     public GameObject door;
 
+    private AudioSource _audio;
+
 	// Use this for initialization
 	void Start () {
+        _audio = GetComponent<AudioSource>();
 	
 	}
 	
@@ -19,8 +22,12 @@ public class openDoor : MonoBehaviour {
     {
         if (other.tag == "Player" || other.tag == "Partner")
         {
+            _audio.Play();
             Destroy(door);
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<openDoor>().enabled = false;
+
         }
 
     }
