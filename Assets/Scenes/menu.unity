@@ -247,7 +247,7 @@ MonoBehaviour:
   moveX: 10.6
   audio: {fileID: 476558081}
   audio2: {fileID: 2098696866}
-  levelName: firstLevelText
+  levelName: levelText01
   exitButton: 0
 --- !u!114 &211298177
 MonoBehaviour:

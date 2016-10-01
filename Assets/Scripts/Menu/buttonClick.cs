@@ -70,6 +70,6 @@ public class buttonClick : MonoBehaviour {
         if (exitButton)
             Application.Quit();
         else
-            SceneManager.LoadScene("firstLevelText", LoadSceneMode.Single);
+            SceneManager.LoadScene(levelName, LoadSceneMode.Single);
     }
 }
