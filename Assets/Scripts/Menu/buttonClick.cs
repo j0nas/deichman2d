@@ -72,4 +72,14 @@ public class buttonClick : MonoBehaviour {
         else
             SceneManager.LoadScene(levelName, LoadSceneMode.Single);
     }
+
+    void OnMouseOver()
+    {
+        transform.DOScale(new Vector3(0.42f, 0.42f, 0.2f), 1);
+    }
+
+    void OnMouseExit()
+    {
+        transform.DOScale(new Vector3(0.40f, 0.40f, 0.2f), 1);
+    }
 }
