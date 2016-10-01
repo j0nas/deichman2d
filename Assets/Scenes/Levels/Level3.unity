@@ -102,7 +102,7 @@ GameObject:
   - 61: {fileID: 43425614}
   m_Layer: 0
   m_Name: Wall3 (2)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,6 +215,10 @@ Prefab:
       propertyPath: m_TagString
       value: Partner
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010152658486, guid: f92e7328da9ba1d4e97283d48b9a9367, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f92e7328da9ba1d4e97283d48b9a9367, type: 2}
   m_IsPrefabParent: 0
@@ -277,7 +281,7 @@ GameObject:
   - 61: {fileID: 252139669}
   m_Layer: 0
   m_Name: Wall3 (6)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +357,7 @@ GameObject:
   - 212: {fileID: 296263515}
   m_Layer: 0
   m_Name: room_0
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -416,7 +420,7 @@ GameObject:
   - 61: {fileID: 513896118}
   m_Layer: 0
   m_Name: Wall3 (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -493,7 +497,7 @@ GameObject:
   - 61: {fileID: 706482944}
   m_Layer: 0
   m_Name: Wall3 (5)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,6 +738,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013659160152, guid: 612b0ab48ee0c5646aecbd2919c2943b, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 612b0ab48ee0c5646aecbd2919c2943b, type: 2}
   m_IsPrefabParent: 0
@@ -749,7 +757,7 @@ GameObject:
   - 61: {fileID: 1362183321}
   m_Layer: 0
   m_Name: Wall3 (3)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,7 +834,7 @@ GameObject:
   - 61: {fileID: 1408398404}
   m_Layer: 0
   m_Name: Wall3 (4)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,7 +911,7 @@ GameObject:
   - 61: {fileID: 1434491278}
   m_Layer: 0
   m_Name: Wall3 (7)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1031,7 +1039,7 @@ GameObject:
   - 61: {fileID: 2072610063}
   m_Layer: 0
   m_Name: Wall3
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
