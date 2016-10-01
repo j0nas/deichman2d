@@ -146,7 +146,7 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 4000012011440060, guid: 7280c84e01c783141a7fd0fdb35c6e6b,
     type: 2}
-  m_PrefabInternal: {fileID: 319361975}
+
 
 --- !u!1001 &36684309
 Prefab:
