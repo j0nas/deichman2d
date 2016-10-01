@@ -11,7 +11,8 @@ public class GameManagerSpawnerScript : MonoBehaviour {
         if (!GameObject.Find("GameManager")) {
             GameObject GM = GameObject.Instantiate(_GM);
             GM.name = "GameManager";
-        }
+            Debug.Log("GameManager Initialized");
+        } else { Debug.Log(gameObject + ": GameManager already present, no action taken"); }
 	}
 	
 }
