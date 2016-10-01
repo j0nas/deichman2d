@@ -41,8 +41,17 @@ public class NewPlayerController : MonoBehaviour {
 
         if (Input.anyKey && !isMoving)
         {
-            switch (Input.inputString)
+            //Debug.Log("Input.inputString = : " + Input.inputString);
+            string caseSwitch = Input.inputString;
+            if (Input.GetKey(KeyCode.UpArrow)) { caseSwitch = "w"; }
+            if (Input.GetKey(KeyCode.LeftArrow)) { caseSwitch = "a"; }
+            if (Input.GetKey(KeyCode.RightArrow)) { caseSwitch = "d"; }
+            if (Input.GetKey(KeyCode.DownArrow)) { caseSwitch = "s"; }
+
+
+            switch (caseSwitch)
             {
+            
 			case "w":
 				targetVector = transform.position + Vector3.up;
 				invertedTargetVector = inverted.transform.position + Vector3.down;
