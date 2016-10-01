@@ -86,11 +86,11 @@ public class NewPlayerController : MonoBehaviour {
 
             if(Vector3.Distance(transform.position, targetVector) < 0.005)
             {
-                if(moveMe) transform.position = targetVector;
-                if(moveInverted) inverted.transform.position = invertedTargetVector;
+                if (moveMe) transform.position = targetVector;
+                if (moveInverted) inverted.transform.position = invertedTargetVector;
             }
 
-			if (transform.position == targetVector || !moveMe)
+			if (transform.position == targetVector || inverted.transform.position == invertedTargetVector)
             {
                 isMoving = false;
                 moveMe = false;
