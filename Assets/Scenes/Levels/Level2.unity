@@ -731,7 +731,7 @@ Prefab:
     - target: {fileID: 114000014170372398, guid: 892aefa0e415d43008765c8749ef6b5c,
         type: 2}
       propertyPath: NextLevelName
-      value: Level3
+      value: levelText04
       objectReference: {fileID: 0}
     - target: {fileID: 1000012302074710, guid: 892aefa0e415d43008765c8749ef6b5c, type: 2}
       propertyPath: m_Layer
@@ -786,7 +786,7 @@ Prefab:
     - target: {fileID: 114000014170372398, guid: 892aefa0e415d43008765c8749ef6b5c,
         type: 2}
       propertyPath: NextLevelName
-      value: Level3
+      value: levelText04
       objectReference: {fileID: 0}
     - target: {fileID: 1000012302074710, guid: 892aefa0e415d43008765c8749ef6b5c, type: 2}
       propertyPath: m_Layer
