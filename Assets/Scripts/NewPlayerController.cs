@@ -81,10 +81,10 @@ public class NewPlayerController : MonoBehaviour {
         if (isMoving)
         {
             if(moveMe) 
-				transform.position = Vector3.Lerp(transform.position, targetVector, animTime / animLenght);
+				transform.position = Vector3.Lerp(transform.position, targetVector, Mathf.Sin((animTime / animLenght) * Mathf.PI * 0.5f));
 
             if(moveInverted)
-            	inverted.transform.position = Vector3.Lerp(inverted.transform.position, invertedTargetVector, animTime / animLenght);
+            	inverted.transform.position = Vector3.Lerp(inverted.transform.position,invertedTargetVector, Mathf.Sin((animTime / animLenght) * Mathf.PI * 0.5f));
 
             if(Vector3.Distance(transform.position, targetVector) < 0.005)
             {
