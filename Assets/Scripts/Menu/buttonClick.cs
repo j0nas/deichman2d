@@ -15,6 +15,9 @@ public class buttonClick : MonoBehaviour {
     public float oldScaleY;
     public float moveX;
 
+    public AudioSource audio;
+    public AudioSource audio2;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -27,6 +30,9 @@ public class buttonClick : MonoBehaviour {
 
     void OnMouseDown()
     {
+        audio.Play();
+        audio2.GetComponent<fadeInPiano>().enabled = false;
+        audio2.GetComponent<fadeOutPiano>().enabled = true;
         Destroy(GetComponent<BoxCollider2D>());
         Destroy (other.GetComponent<BoxCollider2D>());
         if (GetComponent<buttonMovement>())
