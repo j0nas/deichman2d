@@ -11,7 +11,7 @@ public class fadeOutPiano : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        GetComponent<AudioSource>().volume += -0.0015f;
+        GetComponent<AudioSource>().volume += -0.002f;
 	
 	}
 }

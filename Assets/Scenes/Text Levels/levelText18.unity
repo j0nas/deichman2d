@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeInTime: 10
   fadeOutTime: 10
-  levelName: 
+  levelName: levelText19
 --- !u!114 &180637394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: time to part
+  m_Text: "looking back \non our lives"
 --- !u!222 &180637395
 CanvasRenderer:
   m_ObjectHideFlags: 0

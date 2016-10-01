@@ -21,9 +21,10 @@ GameObject:
   - 4: {fileID: 4000011600660382}
   - 212: {fileID: 212000013891834260}
   - 95: {fileID: 95000011206869976}
-  - 65: {fileID: 65000013686470078}
   - 114: {fileID: 114000012827892550}
-  m_Layer: 0
+  - 61: {fileID: 61000011939525940}
+  - 50: {fileID: 50000012862602750}
+  m_Layer: 2
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,18 +44,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65000013686470078
-BoxCollider:
+--- !u!50 &50000012862602750
+Rigidbody2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013659160152}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &61000011939525940
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013659160152}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1}
 --- !u!95 &95000011206869976
 Animator:
   serializedVersion: 3
@@ -87,7 +107,6 @@ MonoBehaviour:
   gridlenth: 1
   isMoving: 0
   animLenght: 5
-  oneBoolToRuleThemAll: 0
 --- !u!212 &212000013891834260
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class buttonClick : MonoBehaviour {
@@ -17,6 +18,10 @@ public class buttonClick : MonoBehaviour {
 
     public AudioSource audio;
     public AudioSource audio2;
+
+    public string levelName;
+
+    public bool exitButton;
 
 	// Use this for initialization
 	void Start () {
@@ -62,6 +67,19 @@ public class buttonClick : MonoBehaviour {
     void Remove()
     {
         Destroy(other.GetComponent<buttonClick>());
-        Destroy(this);
+        if (exitButton)
+            Application.Quit();
+        else
+            SceneManager.LoadScene(levelName, LoadSceneMode.Single);
+    }
+
+    void OnMouseOver()
+    {
+        transform.DOScale(new Vector3(0.42f, 0.42f, 0.2f), 1);
+    }
+
+    void OnMouseExit()
+    {
+        transform.DOScale(new Vector3(0.40f, 0.40f, 0.2f), 1);
     }
 }

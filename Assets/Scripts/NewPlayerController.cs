@@ -15,8 +15,6 @@ public class NewPlayerController : MonoBehaviour {
     private float animTime;
     public float animLenght;
 
-    public bool oneBoolToRuleThemAll;
-
     private Animator myAnim;
     private Animator theirAnim;
     private SpriteRenderer mySprt;
@@ -25,6 +23,8 @@ public class NewPlayerController : MonoBehaviour {
     private bool moveMe = false;
     private bool moveInverted = false;
 
+	private string currentDirection = "";
+	private string inverseDirection = "";
 
 	// Use this for initialization
 	void Start () {
@@ -41,94 +41,111 @@ public class NewPlayerController : MonoBehaviour {
         {
             switch (Input.inputString)
             {
-                case "w":
-                    targetVector = transform.position + Vector3.up;
-                    invertedTargetVector = inverted.transform.position + Vector3.down;
-                    LerpMove();
-                    break;
-                case "a":
-                    targetVector = transform.position + Vector3.left;
-                    mySprt.flipX = true;
-                    invertedTargetVector = inverted.transform.position + Vector3.right;
-                    theirSprt.flipX = false;
-                    LerpMove();
-                    break;
-                case "d":
-                    targetVector = transform.position + Vector3.right;
-                    mySprt.flipX = false;
-                    invertedTargetVector = inverted.transform.position + Vector3.left;
-                    theirSprt.flipX = true;
-                    LerpMove();
-                    break;
-                case "s":
-                    targetVector = transform.position + Vector3.down;
-                    invertedTargetVector = inverted.transform.position + Vector3.up;
-                    LerpMove();
-                    break;
+			case "w":
+				targetVector = transform.position + Vector3.up;
+				invertedTargetVector = inverted.transform.position + Vector3.down;
+				currentDirection = "up";
+				inverseDirection = "down";
+                LerpMove();
+                break;
+			case "a":
+				targetVector = transform.position + Vector3.left;
+				mySprt.flipX = true;
+				invertedTargetVector = inverted.transform.position + Vector3.right;
+				theirSprt.flipX = false;
+				currentDirection = "left";
+				inverseDirection = "right";
+                LerpMove();
+                break;
+			case "d":
+				targetVector = transform.position + Vector3.right;
+				mySprt.flipX = false;
+				invertedTargetVector = inverted.transform.position + Vector3.left;
+				theirSprt.flipX = true;
+				currentDirection = "right";
+				inverseDirection = "left";
+                LerpMove();
+                break;
+			case "s":
+				targetVector = transform.position + Vector3.down;
+				invertedTargetVector = inverted.transform.position + Vector3.up;
+				currentDirection = "down";
+				inverseDirection = "up";
+				LerpMove ();
+                break;
             }
         }
-
+			
         if (isMoving)
         {
-
-            if(moveMe)
-            transform.position = Vector3.Lerp(transform.position, targetVector, animTime / animLenght);
+            if(moveMe) 
+				transform.position = Vector3.Lerp(transform.position, targetVector, animTime / animLenght);
 
             if(moveInverted)
-            inverted.transform.position = Vector3.Lerp(inverted.transform.position, invertedTargetVector, animTime / animLenght);
+            	inverted.transform.position = Vector3.Lerp(inverted.transform.position, invertedTargetVector, animTime / animLenght);
 
             if(Vector3.Distance(transform.position, targetVector) < 0.005)
             {
-                if(moveMe)
-                transform.position = targetVector;
-                if(moveInverted)
-                inverted.transform.position = invertedTargetVector;
+                if (moveMe) transform.position = targetVector;
+                if (moveInverted) inverted.transform.position = invertedTargetVector;
             }
 
-            if (transform.position == targetVector)
+			if (transform.position == targetVector || inverted.transform.position == invertedTargetVector)
             {
                 isMoving = false;
                 moveMe = false;
                 moveInverted = false;
             }
                 
-
             animTime += Time.deltaTime;
         }
-
-
     }
 
     void LerpMove()
     {
-        if (RaycastAll(gameObject, targetVector) != "wall")
+		if (RaycastAll(gameObject, currentDirection) != "wall")
         {
             moveMe = true;
         }
-        if(RaycastAll(inverted, invertedTargetVector) != "wall")
+		if(RaycastAll(inverted, inverseDirection) != "wall")
         {
             moveInverted = true;
         }
 
-        if(RaycastAll(gameObject,targetVector) == "wall" && oneBoolToRuleThemAll)
-        {
-            moveInverted = false;
-        }
-
-
-        isMoving = true;
-        animTime = 0;
-        myAnim.SetTrigger("startWalk");
-        theirAnim.SetTrigger("startWalk");
+		isMoving = moveMe || moveInverted;
+		if (isMoving) {
+			animTime = 0;
+			myAnim.SetTrigger ("startWalk");
+			theirAnim.SetTrigger ("startWalk");
+		}
     }
 
-    string RaycastAll(GameObject obj, Vector3 dir)
+    string RaycastAll(GameObject obj, string direction)
     {
-        RaycastHit2D hit = Physics2D.Raycast(obj.transform.position, dir, gridlenth);
-        if(hit.collider != null)
-        return hit.transform.tag;
-        else
-        {
+		Vector2 dir;
+		switch (direction) {
+			case "left":
+				dir = Vector2.left;
+				break;
+			case "right": 
+				dir = Vector2.right;
+				break;
+			case "up":
+				dir = Vector2.up;
+				break;
+			case "down":
+				dir = Vector2.down; 
+				break;
+			default:
+				dir = Vector2.down;
+				break;
+		}
+
+		RaycastHit2D hit = Physics2D.Raycast(obj.transform.position, dir, gridlenth);
+
+		if (hit.collider != null) {
+			return hit.transform.tag;
+		}else{
             return "null";
         }
     }

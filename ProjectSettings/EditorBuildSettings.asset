@@ -4,4 +4,60 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText01.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText02.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText03.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText04.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText05.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText06.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText07.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText08.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText09.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText10.unity
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level1.unity
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level2.unity
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level3.unity
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level4.unity
+  - enabled: 1
+    path: Assets/Scenes/Levels/O Level 6.unity
+  - enabled: 1
+    path: Assets/Scenes/Levels/O Level 7.unity
+  - enabled: 1
+    path: Assets/Scenes/Levels/O_Level 5.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText11.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText12.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText13.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText14.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText15.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText16.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText17.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText18.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText19.unity
+  - enabled: 1
+    path: Assets/Scenes/Text Levels/levelText20.unity
