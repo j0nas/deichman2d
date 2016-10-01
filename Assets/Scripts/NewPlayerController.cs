@@ -112,10 +112,12 @@ public class NewPlayerController : MonoBehaviour {
             moveInverted = true;
         }
 
-        isMoving = true;
-        animTime = 0;
-        myAnim.SetTrigger("startWalk");
-        theirAnim.SetTrigger("startWalk");
+		isMoving = moveMe || moveInverted;
+		if (isMoving) {
+			animTime = 0;
+			myAnim.SetTrigger ("startWalk");
+			theirAnim.SetTrigger ("startWalk");
+		}
     }
 
     string RaycastAll(GameObject obj, string direction)
