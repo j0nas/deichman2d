@@ -6,7 +6,6 @@ public class buttonMovement : MonoBehaviour {
 
     public float time = 0.5f;
     public float positionX;
-
     // Use this for initialization
     void Start () {
 	
@@ -17,10 +16,7 @@ public class buttonMovement : MonoBehaviour {
 
 
         if (Time.time > time)
-        {
             transform.DOMoveX(positionX, 1.5f, false).OnComplete(destroyThisScript);
-        }
-
     }
 
     void destroyThisScript()
