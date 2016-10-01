@@ -29,7 +29,7 @@ public class fadeInAndOut : MonoBehaviour {
         if (Time.timeSinceLevelLoad > 2.5f)
         {
             GetComponent<Text>().CrossFadeAlpha(0, fadeOutTime, false);
-            fadeOutTime -= fadeOutTime / 10;
+            fadeOutTime -= fadeOutTime / 15;
         }
         if (Time.timeSinceLevelLoad > 4f)
             LoadLevel();
