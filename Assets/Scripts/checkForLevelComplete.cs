@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class checkForLevelComplete : MonoBehaviour {
+	public string NextLevelName;
+
+	private bool playerColliding = false;
+	private bool partnerColliding = false;
 
 	// Use this for initialization
 	void Start () {
@@ -10,12 +15,19 @@ public class checkForLevelComplete : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 
-	void OnCollisionEnter2D(Collision2D collObj) {
+	void OnTriggerEnter2D(Collider2D collObj) {
+		if (collObj.gameObject.tag == "Player") {
+			playerColliding = true;
+		}
+			
 		if (collObj.gameObject.tag == "Partner") {
-			Debug.Log ("PARTNER COLLIDE!");
+			partnerColliding = true;
+		}
+
+		if (playerColliding && partnerColliding) {
+			SceneManager.LoadScene (NextLevelName);
 		}
 	}
 }

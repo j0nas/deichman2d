@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000010699562872}
   - 212: {fileID: 212000013473531722}
   - 95: {fileID: 95000010997470324}
-  - 65: {fileID: 65000014118766690}
+  - 61: {fileID: 61000014184509406}
   m_Layer: 0
   m_Name: Inverted
   m_TagString: Untagged
@@ -42,18 +42,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65000014118766690
-BoxCollider:
+--- !u!61 &61000014184509406
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010152658486}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1}
 --- !u!95 &95000010997470324
 Animator:
   serializedVersion: 3
@@ -102,5 +104,5 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bfdc535aa71588f459503c39682b4887, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
