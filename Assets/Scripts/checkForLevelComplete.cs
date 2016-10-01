@@ -17,6 +17,7 @@ public class checkForLevelComplete : MonoBehaviour {
 			partnerColliding = true;
 		}
 
+		Debug.Log (partnerColliding + " " + playerColliding);
 		if (playerColliding && partnerColliding) {
 			partnerColliding = false;
 			playerColliding = false;
