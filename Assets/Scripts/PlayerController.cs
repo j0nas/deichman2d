@@ -10,9 +10,10 @@ public class PlayerController : MonoBehaviour {
     public float moveTime;
 
     private float animStartTime;
-    private bool isMoving = false;
+    public bool isMoving = false;
     private Animator anim;
     private SpriteRenderer sprt;
+
 
     private Vector3 currentMoveDirection;
 
@@ -20,6 +21,8 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
         anim = GetComponent<Animator>();
         sprt = GetComponent<SpriteRenderer>();
+
+
 	}
 	
 	// Update is called once per frame
@@ -44,26 +47,40 @@ public class PlayerController : MonoBehaviour {
         switch (button)
         {
             case "w":
-                if(Physics2D.Raycast(transform.position, Vector2.up * invertedY, gridLenght))
-                    return;               
+                if (Physics2D.Raycast(transform.position, Vector2.up * invertedY, gridLenght))
+                {
+                    LerpMove(transform.position);
+                    break;
+                }                                                
                 LerpMove(transform.position + new Vector3(0, gridLenght * invertedY, 0));
                 anim.SetTrigger("startWalk");
                 break;
             case "a":
                 if (Physics2D.Raycast(transform.position, Vector2.left * invertedX, gridLenght))
-                    return;
+                {
+                    LerpMove(transform.position);
+                    break;
+                }
+                    
                 LerpMove(transform.position + new Vector3(gridLenght * invertedX * (-1), 0, 0));
                 anim.SetTrigger("startWalk");
                 break;
             case "d":
                 if (Physics2D.Raycast(transform.position, Vector2.right * invertedX, gridLenght))
-                    return;
+                {
+                    LerpMove(transform.position);
+                    break;
+                }                  
                 LerpMove(transform.position + new Vector3(gridLenght * invertedX, 0, 0));
                 anim.SetTrigger("startWalk");
                 break;
             case "s":
                 if (Physics2D.Raycast(transform.position, Vector2.down * invertedY, gridLenght))
-                    return;
+                {
+                    LerpMove(transform.position);
+                    break;
+                }
+                    
                 anim.SetTrigger("startWalk");
                 LerpMove(transform.position + new Vector3(0, gridLenght * invertedY * (-1), 0));
                 break;
