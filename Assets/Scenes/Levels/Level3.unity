@@ -264,7 +264,7 @@ Prefab:
     - target: {fileID: 114000014170372398, guid: 892aefa0e415d43008765c8749ef6b5c,
         type: 2}
       propertyPath: NextLevelName
-      value: Level4
+      value: levelText04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 892aefa0e415d43008765c8749ef6b5c, type: 2}
@@ -1022,7 +1022,7 @@ Prefab:
     - target: {fileID: 114000014170372398, guid: 892aefa0e415d43008765c8749ef6b5c,
         type: 2}
       propertyPath: NextLevelName
-      value: Level4
+      value: levelText04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 892aefa0e415d43008765c8749ef6b5c, type: 2}

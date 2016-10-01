@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeInTime: 10
   fadeOutTime: 10
-  levelName: Level2
+  levelName: Level3
 --- !u!114 &180637394
 MonoBehaviour:
   m_ObjectHideFlags: 0

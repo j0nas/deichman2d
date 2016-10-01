@@ -8,6 +8,7 @@ public class fadeInAndOut : MonoBehaviour {
     public float fadeInTime;
     public float fadeOutTime;
 
+    public bool manualLoadWIthString;
     public string levelName = "";
 
 	// Use this for initialization
@@ -40,6 +41,11 @@ public class fadeInAndOut : MonoBehaviour {
 
     void LoadLevel()
     {
-        SceneManager.LoadScene(levelName);
+        if (manualLoadWIthString)
+        {
+            SceneManager.LoadScene(levelName);
+        }
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
